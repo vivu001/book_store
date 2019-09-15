@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">User ID</th>
+    <th scope="col">Book Id</th>
+    <th scope="col">Quantity</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let cart of shoppingCarts; let i = index">
+  <tr>
+    <th scope="row">{{i + 1}}</th>
+    <td>{{cart.id.userId}}</td>
+    <td>{{cart.id.bookId}}</td>
+    <td>{{cart.quantity}}</td>
+  </tr>
+  </tbody>
+</table>

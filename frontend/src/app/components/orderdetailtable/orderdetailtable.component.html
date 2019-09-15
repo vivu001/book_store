@@ -1,0 +1,18 @@
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Order</th>
+    <th scope="col">Book</th>
+    <th scope="col">Quantity</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let orderdetail of orderDetails">
+  <tr>
+    <th scope="row">{{orderdetail.id}}</th>
+    <td>{{orderdetail.order.id}}</td>
+    <td>{{orderdetail.book.title}}</td>
+    <td>{{orderdetail.quantity}}</td>
+  </tr>
+  </tbody>
+</table>

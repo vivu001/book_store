@@ -1,0 +1,18 @@
+<div class="card"><img class="card-img-top mx-auto img-thumbnail"
+                       src="{{book.imgUrl}}"
+                       alt="book {{book.id}}">
+  <div class="card-body p-2 pt-3">
+    <strong>"{{book.title}}"</strong>
+    <div> {{book.author}} </div>
+    <div> {{book.year}} - {{book.publisher}}</div>
+  </div>
+  <div class="input-group p-2">
+    <input type="number" min="1" class="form-control form-control-sm mr-2" placeholder="1"
+                                 id="addToCart" [(ngModel)] = "quantity"
+                                 required="required">
+    <div class="input-group-append">
+      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target=".bd-example-modal-sm" (click)="onAddToCart(book, quantity) "> + 🛒 </button>
+    </div>
+  </div>
+</div>
+

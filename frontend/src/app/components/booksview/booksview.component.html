@@ -1,0 +1,15 @@
+<div class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let book of books">
+        <app-bookcard
+          [book] = book
+          (addToCartEmitter)="addToCart($event)"
+        >
+        </app-bookcard>
+      </div>
+    </div>
+  </div>
+</div>
+
+
