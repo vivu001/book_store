@@ -1,9 +1,9 @@
 <div class="py-3">
   <div class="container">
     <div class="row ">
-      <div class="col-sm-3 py-2" *ngFor="let book of books">
+      <div class="col-sm-3 py-2" *ngFor="let book of pageOfBooks">
         <app-bookcard
-          [book] = book
+          [book]="book"
           (addToCartEmitter)="addToCart($event)"
         >
         </app-bookcard>
@@ -12,4 +12,7 @@
   </div>
 </div>
 
-
+<app-my-pagination
+  [items]="books"
+  (changePage)="onChangePage($event)">
+</app-my-pagination>

@@ -10,6 +10,7 @@ import {ShoppingcartService} from '../../services/shoppingcart/shoppingcart.serv
 })
 export class BooksviewComponent implements OnInit {
   books: Book[];
+  pageOfBooks: Array<any>;
 
   constructor(private bookService: BookService, private shoppingCartService: ShoppingcartService) {
   }
@@ -20,5 +21,10 @@ export class BooksviewComponent implements OnInit {
 
   addToCart(event) {
     this.shoppingCartService.postCart(1, event.book.id, event.quantity);
+  }
+
+  onChangePage(pageOfBooks: Array<any>) {
+    // update current page of items
+    this.pageOfBooks = pageOfBooks;
   }
 }

@@ -20,10 +20,13 @@ import { CarttableComponent } from './components/carttable/carttable.component';
 import { OrdertableComponent } from './components/ordertable/ordertable.component';
 import { OrderdetailtableComponent } from './components/orderdetailtable/orderdetailtable.component';
 import {FormsModule} from '@angular/forms';
+import {JwPaginationComponent} from 'jw-angular-pagination';
+import { MyPaginationComponent } from './components/my-pagination/my-pagination.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    JwPaginationComponent,
     PagesComponent,
     ComponentsComponent,
     HomeComponent,
@@ -38,7 +41,8 @@ import {FormsModule} from '@angular/forms';
     BookcardComponent,
     CarttableComponent,
     OrdertableComponent,
-    OrderdetailtableComponent
+    OrderdetailtableComponent,
+    MyPaginationComponent
   ],
   imports: [
     BrowserModule,
