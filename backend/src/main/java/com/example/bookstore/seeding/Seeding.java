@@ -55,6 +55,26 @@ public class Seeding {
                 "https://images-na.ssl-images-amazon.com/images/I/41AAGpUwL7L._SX314_BO1,204,203,200_.jpg"));
         books.add(new Book("Veggies", "Dorling Kindersley", "Jamie Oliver", "2019", "978-3-8310-3828-2", 26.95,
                 "https://images-na.ssl-images-amazon.com/images/I/41NHTcFKQSL._SX258_BO1,204,203,200_.jpg"));
+        books.add(new Book("Spring Boot in Action", "Manning", "Craig Walls", "2015", "978-1-61729-254-5", 29.99,
+                "https://assets.thalia.media/img/artikel/07cbef129148bc75e491b9d2048240a975e899e4-00-00.jpeg"));
+        books.add(new Book("Das Schmetterlingszimmer", "Goldmann", "Lucinda Riley", "2019", "978-3-442-48581-9", 15.90,
+                "https://assets.thalia.media/img/artikel/6d8b10192c0a5a434f9a518b230a3f32a5b2dfd6-00-00.jpeg"));
+        books.add(new Book("Gone With the Wind", "Pan Macmillan", "Margaret Mitchell", "2014", "978-1-4472-6453-8", 11.29,
+                "https://assets.thalia.media/img/artikel/79f36777c4b772951824cb252ef96b77ed249541-00-00.jpeg"));
+
+        books.add(new Book("Deep Learning mit R und Keras", "MITP Verlags GmbH", "François Chollet, J. J. Allaire", "2018", "978-3-95845-893-2", 44.99,
+                "https://assets.thalia.media/img/artikel/56070aba4c32f56d457da057ab0eb96459e288f8-00-00.jpeg"));
+        books.add(new Book("Einführung in Machine Learning mit Python", "Dpunkt.Verlag GmbH", "Andreas C. Müller, Sarah Guido", "2017", "978-3-96009-049-6", 39.90,
+                "https://assets.thalia.media/img/artikel/2d1cffedb906f889b363f25b22d5a70a55611009-00-00.jpeg"));
+        books.add(new Book("Wenn ich wütend bin", "Carlsen", "Nanna Nesshoever", "2019", "978-3-551-51838-5", 13.00,
+                "https://assets.thalia.media/img/artikel/963d9cca966ed076f0b78301ee10df6a3a1e740f-00-00.jpeg"));
+        books.add(new Book("Der kleine Prinz / Le Petit Prince", "Anaconda Verlag", "Antoine de Saint-Exupery", "2018", "978-3-7306-0595-0", 4.99,
+                "https://assets.thalia.media/img/artikel/8bb22c592b5654233099daad69bfed129a7de70a-00-00.jpeg"));
+        books.add(new Book("Upgrade (DE)", "Gestalten", "Robert Klanten, Caroline Kurze", "2017", "978-3-89955-910-1", 39.90,
+                "https://assets.thalia.media/img/artikel/42ac82d9d1a3e5b5f3aa16223cdae28d252f3c1d-00-00.jpeg"));
+        books.add(new Book("Fritz Kahn. Infographics Pioneer", "Taschen Deutschland", "Uta Debschitz, Thilo Debschitz", "2017", "978-3-8365-0493-5", 15.00,
+                "https://assets.thalia.media/img/artikel/9ac7ee195b3115e2601b9aa437081b4a14dea062-00-00.jpeg"));
+
         return books;
     }
 
