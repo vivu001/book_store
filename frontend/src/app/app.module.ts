@@ -19,9 +19,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { CarttableComponent } from './components/carttable/carttable.component';
 import { OrdertableComponent } from './components/ordertable/ordertable.component';
 import { OrderdetailtableComponent } from './components/orderdetailtable/orderdetailtable.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {JwPaginationComponent} from 'jw-angular-pagination';
 import { MyPaginationComponent } from './components/my-pagination/my-pagination.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +43,15 @@ import { MyPaginationComponent } from './components/my-pagination/my-pagination.
     CarttableComponent,
     OrdertableComponent,
     OrderdetailtableComponent,
-    MyPaginationComponent
+    MyPaginationComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

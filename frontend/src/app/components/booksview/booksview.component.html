@@ -1,13 +1,11 @@
-<div class="py-3">
-  <div class="container">
-    <div class="row ">
-      <div class="col-sm-3 py-2" *ngFor="let book of pageOfBooks">
-        <app-bookcard
-          [book]="book"
-          (addToCartEmitter)="addToCart($event)"
-        >
-        </app-bookcard>
-      </div>
+<div class="container">
+  <div class="row ">
+    <div class="col-sm-3 p-2" id="bookcard" *ngFor="let book of pageOfBooks">
+      <app-bookcard
+        [book]="book"
+        (addToCartEmitter)="addToCart($event)"
+      >
+      </app-bookcard>
     </div>
   </div>
 </div>

@@ -21,6 +21,10 @@ export class BookcardComponent implements OnInit {
   }
 
   onAddToCart(book, quantity) {
+    if (quantity === undefined) {
+      quantity = 1;
+      // throw new Error('Quantity is required');
+    }
     this.addToCartEmitter.emit({book, quantity});
   }
 }

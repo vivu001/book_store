@@ -1,7 +1,16 @@
+#bookcard {
+  background-color: antiquewhite;
+}
+
 .card-body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 11px;
-  height: 8em;
+  height: 7.5em;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 12px;
 }
 
 /* Transition property for smooth transformation of images */
@@ -10,11 +19,27 @@
 }
 
 /* transforming the image when container gets hovered */
-.card:hover img {
-  transform: scale(1.5);
+img:hover {
+  transform: scale(1.2);
 }
 
 .card-img-top {
   height: 8em;
   width: 6em;
+}
+
+#price {
+  font-size: .8em;
+  font-weight: bolder;
+  color: green;
+}
+
+input:required {
+  //border-color: red !important;
+  color: red;
+}
+
+::placeholder {
+  font-size: 0.8em;
+  font-style: italic;
 }
